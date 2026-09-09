@@ -119,6 +119,7 @@ fn initialize(program_id: &Address, a: &mut [AccountView], ix: &[u8]) -> Program
     out[67..83].copy_from_slice(&ix[27..43]);
     out[83..99].copy_from_slice(&ix[43..59]);
     out[99..107].copy_from_slice(&ix[59..67]);
+    out[107..115].copy_from_slice(&1u64.to_le_bytes());
     Ok(())
 }
 
