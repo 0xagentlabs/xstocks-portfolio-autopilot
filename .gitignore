@@ -1,0 +1,10 @@
+target/
+node_modules/
+.next/
+.vercel/
+program-keypair.json
+*.log
+.env*
+!.env.example
+.multica/
+AGENTS.md
