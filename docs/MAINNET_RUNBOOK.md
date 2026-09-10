@@ -4,8 +4,8 @@ This runbook is for the portfolio owner to execute personally. Repository automa
 
 ## Frozen release inputs
 
-- Contract source commit: `FROZEN_CONTRACT_COMMIT` (replaced by the documentation-only release commit)
-- Expected SBF SHA-256: `FROZEN_SO_SHA256` (replaced by the documentation-only release commit)
+- Contract source commit: `d790fa13b8243b9a766d83540d864c4bacb4400f`
+- Expected SBF SHA-256: `729fb6b1eb58069a358e2b8f619341e2997dd3584e03b7b9c508c4e4f1f22354`
 - Program ID: `6Uzr4jz1SENxn3DdprQQ24zxaJXr6rThQNB48QxbuJed`
 - Build toolchain: Rust 1.89.0 SBF platform tools, `cargo-build-sbf 4.1.0`, Solana CLI 4.2.1
 
@@ -18,7 +18,7 @@ On a trusted, clean machine:
 ```sh
 git clone https://github.com/0xagentlabs/xstocks-portfolio-autopilot.git
 cd xstocks-portfolio-autopilot
-git checkout FROZEN_CONTRACT_COMMIT
+git checkout d790fa13b8243b9a766d83540d864c4bacb4400f
 cargo fmt --all -- --check
 cargo build-sbf
 cargo test --workspace
