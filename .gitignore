@@ -4,6 +4,7 @@ node_modules/
 .vercel/
 program-keypair.json
 *.log
+*.tsbuildinfo
 .env*
 !.env.example
 .multica/
