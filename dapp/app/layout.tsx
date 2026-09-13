@@ -1,5 +1,3 @@
 import "./globals.css";
-import Providers from "../components/Providers";
-export const metadata = { title: "xStocks Autopilot", description: "Non-custodial xStocks portfolio automation on Solana devnet" };
-export default function Layout({children}:{children:React.ReactNode}) { return <html lang="zh-CN"><body><Providers>{children}</Providers></body></html>; }
-
+export const metadata = { title: "xStocks Dev Path｜Solana 开发路线图", description: "从资产接入到安全上线：带权威文档入口的 Solana xStocks 工程路线图。" };
+export default function Layout({children}:{children:React.ReactNode}) { return <html lang="zh-CN"><body>{children}</body></html>; }
